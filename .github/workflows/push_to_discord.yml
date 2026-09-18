@@ -12,5 +12,5 @@ jobs:
       - name: Send Discord notification
         run: |
           curl -H "Content-Type: application/json" \
-          -d "{\"content\":\"🚀 Nuevo push en main: '${{ github.event.head_commit.message }}' por ${{ github.actor }}\"}" \
+          -d "{\"content\":\"🚀 New push in main: '${{ github.event.head_commit.message }}' por ${{ github.actor }}\"}" \
           ${{ secrets.DISCORD_WEBHOOK }}
