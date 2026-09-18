@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b8l5ye3fo0ewi"]
+
+[ext_resource type="Script" uid="uid://bjvhapmb8rusl" path="res://components/follow_char.gd" id="1_1524a"]
+
+[node name="FollowChar" type="Node3D" unique_id=2002642730]
+script = ExtResource("1_1524a")

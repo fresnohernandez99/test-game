@@ -14,6 +14,10 @@ config/name="test"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Globals="*uid://bcggh1vk5xuxa"
+
 [display]
 
 window/stretch/mode="canvas_items"

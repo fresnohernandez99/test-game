@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://chp56y0i0a2wj"]
+
+[ext_resource type="PackedScene" uid="uid://da4w1s2w1vmhm" path="res://gui/main_menu_ui.tscn" id="1_l6cm7"]
+
+[node name="MainMenu" type="Control" unique_id=1378323435]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MainMenuUI" parent="." unique_id=1515171798 instance=ExtResource("1_l6cm7")]
+layout_mode = 1
