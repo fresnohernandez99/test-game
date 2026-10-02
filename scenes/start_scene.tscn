@@ -16,6 +16,7 @@ versionLabel = NodePath("MainMenuUI/MarginContainer/VersionLabel")
 [node name="MainMenuUI" parent="." unique_id=1515171798 instance=ExtResource("2_u7rsi")]
 layout_mode = 1
 
+[connection signal="pressed" from="MainMenuUI/VBoxContainer/MarginContainer/GoHubBtn" to="." method="_on_go_hub_btn_pressed"]
 [connection signal="pressed" from="MainMenuUI/VBoxContainer/MarginContainer3/ExitBtn" to="." method="_on_exit_btn_pressed"]
 
 [editable path="MainMenuUI"]
