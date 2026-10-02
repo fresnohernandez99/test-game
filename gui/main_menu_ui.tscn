@@ -7,3 +7,71 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=979213753]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=724487600]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.48177084
+anchor_top = 0.82592595
+anchor_right = 0.5182292
+anchor_bottom = 1.0
+offset_right = -6.1035156e-05
+grow_horizontal = 2
+grow_vertical = 0
+offset_transform_rotation = 0.7190757
+alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer" unique_id=333784292]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+
+[node name="GoHubBtn" type="Button" parent="VBoxContainer/MarginContainer" unique_id=71644792]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Go Hub"
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer" unique_id=817088452]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+
+[node name="GoOptionsBtn" type="Button" parent="VBoxContainer/MarginContainer2" unique_id=124191437]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Options"
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer" unique_id=445448164]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+
+[node name="ExitBtn" type="Button" parent="VBoxContainer/MarginContainer3" unique_id=7299646]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Exit"
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=29422471]
+layout_mode = 1
+offset_right = 190.0
+offset_bottom = 100.0
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+metadata/_edit_use_anchors_ = true
+
+[node name="VersionLabel" type="Label" parent="MarginContainer" unique_id=1788260470]
+layout_mode = 2
+size_flags_horizontal = 0

@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dfn6tyuws1d6n"]
+
+[ext_resource type="Script" uid="uid://dilx34hrknake" path="res://scenes/start_scene.gd" id="1_3tgnh"]
+[ext_resource type="PackedScene" uid="uid://da4w1s2w1vmhm" path="res://gui/main_menu_ui.tscn" id="2_u7rsi"]
+
+[node name="StartScene" type="Control" unique_id=1024640828 node_paths=PackedStringArray("versionLabel")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3tgnh")
+versionLabel = NodePath("MainMenuUI/MarginContainer/VersionLabel")
+
+[node name="MainMenuUI" parent="." unique_id=1515171798 instance=ExtResource("2_u7rsi")]
+layout_mode = 1
+
+[connection signal="pressed" from="MainMenuUI/VBoxContainer/MarginContainer3/ExitBtn" to="." method="_on_exit_btn_pressed"]
+
+[editable path="MainMenuUI"]
