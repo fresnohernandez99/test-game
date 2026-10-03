@@ -17,6 +17,7 @@ versionLabel = NodePath("MainMenuUI/MarginContainer/VersionLabel")
 layout_mode = 1
 
 [connection signal="pressed" from="MainMenuUI/VBoxContainer/MarginContainer/GoHubBtn" to="." method="_on_go_hub_btn_pressed"]
+[connection signal="pressed" from="MainMenuUI/VBoxContainer/MarginContainer2/GoOptionsBtn" to="." method="_on_go_options_btn_pressed"]
 [connection signal="pressed" from="MainMenuUI/VBoxContainer/MarginContainer3/ExitBtn" to="." method="_on_exit_btn_pressed"]
 
 [editable path="MainMenuUI"]

@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://n4bggu7sjlyu"]
+
+[ext_resource type="Script" uid="uid://cppo2npbhmwec" path="res://scenes/options_scene.gd" id="1_srggy"]
+[ext_resource type="PackedScene" uid="uid://31xmf0bpx60r" path="res://gui/visual_options.tscn" id="2_xj27w"]
+
+[node name="OptionsScene" type="Control" unique_id=401694227 node_paths=PackedStringArray("_720CheckBox", "_1080CheckBox", "fullScreenCheckButton")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_srggy")
+_720CheckBox = NodePath("VisualOptions/VBoxContainer/HBoxContainer/Options/HBoxContainer/720CheckBox")
+_1080CheckBox = NodePath("VisualOptions/VBoxContainer/HBoxContainer/Options/HBoxContainer/1080CheckBox")
+fullScreenCheckButton = NodePath("VisualOptions/VBoxContainer/HBoxContainer/Options/FullScreenCheckButton")
+
+[node name="VisualOptions" parent="." unique_id=1604532282 instance=ExtResource("2_xj27w")]
+layout_mode = 1
+
+[connection signal="pressed" from="VisualOptions/VBoxContainer/TopBar/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="toggled" from="VisualOptions/VBoxContainer/HBoxContainer/Options/HBoxContainer/720CheckBox" to="." method="_on_720_check_box_toggled"]
+[connection signal="toggled" from="VisualOptions/VBoxContainer/HBoxContainer/Options/HBoxContainer/1080CheckBox" to="." method="_on_1080_check_box_toggled"]
+[connection signal="toggled" from="VisualOptions/VBoxContainer/HBoxContainer/Options/FullScreenCheckButton" to="." method="_on_full_screen_check_button_toggled"]
+
+[editable path="VisualOptions"]

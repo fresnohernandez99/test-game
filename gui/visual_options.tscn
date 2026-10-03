@@ -1,0 +1,98 @@
+[gd_scene format=3 uid="uid://31xmf0bpx60r"]
+
+[node name="VisualOptions" type="Control" unique_id=1604532282]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1626642413]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=534834183]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TopBar" type="HBoxContainer" parent="VBoxContainer" unique_id=1915789998]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="BackButton" type="Button" parent="VBoxContainer/TopBar" unique_id=1992566249]
+layout_mode = 2
+text = "<- Go back"
+
+[node name="Label" type="Label" parent="VBoxContainer/TopBar" unique_id=1716435892]
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_font_sizes/font_size = 50
+text = "Options"
+
+[node name="Spacer" type="Label" parent="VBoxContainer" unique_id=1001269090]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "
+
+"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1325010262]
+layout_mode = 2
+
+[node name="Titles" type="VBoxContainer" parent="VBoxContainer/HBoxContainer" unique_id=1735520399]
+layout_mode = 2
+size_flags_horizontal = 10
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/Titles" unique_id=1304296041]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "Resolution"
+
+[node name="Spacer" type="Label" parent="VBoxContainer/HBoxContainer/Titles" unique_id=1409850779]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+
+[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer/Titles" unique_id=196890126]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "FullScreen"
+
+[node name="Options" type="VBoxContainer" parent="VBoxContainer/HBoxContainer" unique_id=479837549]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/Options" unique_id=1881319335]
+layout_mode = 2
+
+[node name="720CheckBox" type="CheckBox" parent="VBoxContainer/HBoxContainer/Options/HBoxContainer" unique_id=1620952356]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "720p"
+
+[node name="1080CheckBox" type="CheckBox" parent="VBoxContainer/HBoxContainer/Options/HBoxContainer" unique_id=1781266242]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "1080p"
+
+[node name="Spacer" type="Label" parent="VBoxContainer/HBoxContainer/Options" unique_id=656607371]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+
+[node name="FullScreenCheckButton" type="CheckButton" parent="VBoxContainer/HBoxContainer/Options" unique_id=1780147461]
+layout_mode = 2
+size_flags_horizontal = 0

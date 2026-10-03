@@ -18,3 +18,7 @@ func _on_exit_btn_pressed() -> void:
 
 func _on_go_hub_btn_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/hub_area.tscn")
+
+
+func _on_go_options_btn_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/options_scene.tscn")
